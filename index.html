@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Railway E-Ticketing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Railway E-Ticketing</h1>
+  <form id="ticketForm">
+    <div class="field">
+      <label for="from">From:</label>
+      <input type="text" id="from" name="from" required>
+    </div>
+    <div class="field">
+      <label for="to">To:</label>
+      <input type="text" id="to" name="to" required>
+    </div>
+    <div class="field">
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+    </div>
+    <div class="field">
+      <label for="class">Class:</label>
+      <select id="class" name="class" required>
+        <option value="">--Select--</option>
+        <option value="First Class">First Class</option>
+        <option value="Second Class">Second Class</option>
+        <option value="Third Class">Third Class</option>
+      </select>
+    </div>
+    <button type="submit">Get Ticket</button>
+  </form>
+  <div id="ticketContainer"></div>
+  <script src="script.js"></script>
+</body>
+</html>
